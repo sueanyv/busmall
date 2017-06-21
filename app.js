@@ -127,5 +127,20 @@ function displayChart() {
       hoverBackgroundColor: hoverColors
     }
 
-  
+    ]
+  };
+  new Chart(context, {
+    type: 'bar',
+    data: data,
+    options: {
+      responsive: false
+    },
+    scales: [{
+      tick: {
+        beginAtZero: true
+      }
+    }]
+  });
+}
+
 render();
