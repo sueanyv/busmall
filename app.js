@@ -105,5 +105,27 @@ function showResuts() {
 
 }
 
+function displayChart() {
+  var clickBackroundColors = [];
+  var hoverColors = [];
+  for (var i = 0; i < productImg.length; i++) {
+    hoverColors[i] = '#007f00';
+    clickBackroundColors[i] = '#999999';
+  }
 
+
+  var data = {
+    labels: productImg.map(function(product) {
+      return product.imgName;
+    }),
+    datasets: [{
+      label: 'Clicks',
+      data: productImg.map(function(product) {
+        return product.click;
+      }),
+      backGroundColor: clickBackroundColors,
+      hoverBackgroundColor: hoverColors
+    }
+
+  
 render();
