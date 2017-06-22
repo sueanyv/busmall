@@ -130,7 +130,17 @@ function displayChart() {
     labels: productImg.map(function(product) {
       return product.imgName;
     }),
-  
+    datasets: [{
+      label: 'Clicks',
+      data: productImg.map(function(product) {
+        return product.click;
+      }),
+      backGroundColor: clickBackroundColors,
+      hoverBackgroundColor: hoverColors
+    }
+
+    ]
+  };
   new Chart(context, {
     type: 'bar',
     data: data,
