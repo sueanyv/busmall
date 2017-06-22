@@ -70,6 +70,7 @@ function render() {
   turnArrayIntoImages(productImg[rightImg], right);
 }
 
+
 function handleImageClick(event) {
   var clickedProduct;
   switch (event.target.id) {
