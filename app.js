@@ -126,6 +126,11 @@ function displayChart() {
   }
 
 
+  var data = {
+    labels: productImg.map(function(product) {
+      return product.imgName;
+    }),
+  
   new Chart(context, {
     type: 'bar',
     data: data,
