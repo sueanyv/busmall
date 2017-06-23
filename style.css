@@ -1,0 +1,55 @@
+
+img {
+  width: 250px;
+  height: 250px;
+  margin-left: 60px;
+  margin-top: 10px;
+  border-radius: 50px;
+
+}
+body{
+  background-color: rgba(125, 255, 160, 0.04);
+}
+
+#image-container{
+  margin: 120px;
+  background-color: #ffffff;
+  border: 3px solid green
+}
+#bus{
+  text-align: center;
+  animation: slide-left 1s;
+}
+@keyframes slide-left {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+#pro{
+  text-align: center;
+  font-size: 24px;
+  /*position: absolute;*/
+  /*top: 10.5rem;
+  /*left: 10%;*/
+  opacity: 0;
+  color: darkgreen;
+  animation-name: fadeInOut;
+  animation-delay: 1s;
+  animation-duration: 15s;
+}
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
