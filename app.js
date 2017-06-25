@@ -7,7 +7,7 @@ var previousImages = [];
 var left = document.getElementById('left');
 var middle = document.getElementById('middle');
 var right = document.getElementById('right');
-var totalClicks = 0;
+
 
 
 
