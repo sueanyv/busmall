@@ -1,0 +1,23 @@
+
+
+img {
+  width: 250px;
+  height: 250px;
+  margin-left: 60px;
+  margin-top: 10px;
+  border-radius: 50px;
+
+}
+body{
+  background-color: rgba(125, 255, 160, 0.04);
+}
+
+#image-container{
+  margin: 120px;
+  background-color: #ffffff;
+  border: 3px solid green
+}
+#bus{
+  text-align: center;
+  animation: slide-left 1s;
+}
