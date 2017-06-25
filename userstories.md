@@ -1,8 +1,9 @@
-User should be able to see pictures
-User wants pictures to change
-User should be able to pic pictures that they like the most
+User Stories
 
-Dev
-Pictures should be uniform
-Pictures should not repeat
-Pictures should show
+As a Shopper/Rider I want to be able to give feedback on items being sold and what I am interested in buying
+
+As a Shopper/Rider  I need instructions on what to do on the survey.
+
+As a Shopper/Rider  I want to be able to quickly select items with a click
+
+Shopper/Rider  I want a continuous flow of pics, a nice, organized and easy to use site.
