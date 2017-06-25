@@ -8,9 +8,8 @@ var left = document.getElementById('left');
 var middle = document.getElementById('middle');
 var right = document.getElementById('right');
 var totalClicks = 0;
-var canvas = document.getElementById('canvas');
 
-var context = canvas.getContext('2d');
+
 
 
 var leftImg;
@@ -100,7 +99,6 @@ function handleImageClick(event) {
 function showResuts() {
 
   for (var i = 0; i < productImg.length; i++) {
-    console.log(productImg[i].imgName + ';' + productImg[i].click + '/' + productImg[i].views);
   }
 
 }
