@@ -50,7 +50,6 @@ function turnArrayIntoImages(product, img) {
   var att = document.createAttribute('src');
   att.value = product.path;
   img.setAttributeNode(att);
-  // left.setAttribute();
 }
 
 function render() {
@@ -70,7 +69,7 @@ function render() {
   turnArrayIntoImages(productImg[centerImg], middle);
   turnArrayIntoImages(productImg[rightImg], right);
 }
-imgContainer.addEventListener('click', handleImageClick);
+
 
 function handleImageClick(event) {
   var clickedProduct;
@@ -91,9 +90,23 @@ function handleImageClick(event) {
     showResuts();
     imgContainer.removeEventListener('click', handleImageClick);
     displayChart();
+    storeLocalData();
   } else {
     render();
 
+  }
+}
+
+function storeLocalData(){
+  var dataString = JSON.stringify(productImg);
+  localStorage.setItem('data', dataString);
+}
+
+function retrieveLocalData(){
+  var dataString = localStorage.getItem('data');
+  if(dataString){
+    var data = JSON.parse(dataString);
+    productImg = data;
   }
 }
 
@@ -142,4 +155,6 @@ function displayChart() {
   });
 }
 
+retrieveLocalData();
 render();
+imgContainer.addEventListener('click', handleImageClick);
