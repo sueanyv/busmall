@@ -100,7 +100,6 @@ function handleImageClick(event) {
 function showResuts() {
 
   for (var i = 0; i < productImg.length; i++) {
-    console.log(productImg[i].imgName + ';' + productImg[i].click + '/' + productImg[i].views);
   }
 
 }
